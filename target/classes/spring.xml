@@ -13,8 +13,15 @@
     <context:component-scan base-package="io.lhdev.SpringFrameworkDemo"></context:component-scan>
 
 <!--    xml based configuration-->
+<!--    When using property tag in bean, you are using setter method-->
+<!--    <bean id="tire" class="io.lhdev.SpringFrameworkDemo.Tire">-->
+<!--        <property name="brand" value="Goodyear"></property>-->
+<!--    </bean>-->
+
+<!--    * Using constructor injection -->
     <bean id="tire" class="io.lhdev.SpringFrameworkDemo.Tire">
-        <property name="brand" value="Goodyear"></property>
+        <constructor-arg value="Goodyear"></constructor-arg>
     </bean>
+
 
 </beans>
