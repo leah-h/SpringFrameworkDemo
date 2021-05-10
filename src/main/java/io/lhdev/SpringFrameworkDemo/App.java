@@ -14,8 +14,11 @@ public class App {
         // the Java code here...
 //        Vehicle obj = (Vehicle)context.getBean("vehicle");
 //        obj.drive();
+//
+//        Vehicle obj = (Vehicle)context.getBean("bike");
+//        obj.drive();
 
-        Vehicle obj = (Vehicle)context.getBean("bike");
-        obj.drive();
+        Tire t = (Tire) context.getBean("tire");
+        System.out.println(t);
     }
 }

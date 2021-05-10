@@ -11,4 +11,10 @@
 <!--    <bean id="vehicle" class="io.lhdev.SpringFrameworkDemo.Bike"></bean>-->
 
     <context:component-scan base-package="io.lhdev.SpringFrameworkDemo"></context:component-scan>
+
+<!--    xml based configuration-->
+    <bean id="tire" class="io.lhdev.SpringFrameworkDemo.Tire">
+        <property name="brand" value="Goodyear"></property>
+    </bean>
+
 </beans>
