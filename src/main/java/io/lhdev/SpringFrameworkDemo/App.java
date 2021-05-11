@@ -18,7 +18,10 @@ public class App {
 //        Vehicle obj = (Vehicle)context.getBean("bike");
 //        obj.drive();
 
-        Tire t = (Tire) context.getBean("tire");
-        System.out.println(t);
+        Car obj = (Car)context.getBean("car");
+        obj.drive();
+
+//        Tire t = (Tire) context.getBean("tire");
+//        System.out.println(t);
     }
 }
